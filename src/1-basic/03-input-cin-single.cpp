@@ -10,3 +10,7 @@ int main() {
 
     return 0;
 }
+
+// hello world !
+// hello world !
+// 连续输入，适合终端chat

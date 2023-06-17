@@ -1,6 +1,12 @@
 #include <iostream>
 #include <string>
 
+/**
+ * Long : L
+ * float: F
+ * unsigned: U
+ */
+
 using namespace std;
 
 int main() {

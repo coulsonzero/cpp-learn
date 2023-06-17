@@ -1,3 +1,8 @@
+/**
+ * `numeric_limits<int>::max()`: 数据类型最大值
+ * `numeric_limits<int>::min()`: 数据类型最小值
+ */
+
 #include <iostream>
 #include <limits>
 using namespace std;
