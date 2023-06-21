@@ -23,3 +23,4 @@ if __name__ == '__main__':
     ignoreFiles = ["c", "cpp", "py", "h", "dat"]
 
     visitDir(targetPath)
+

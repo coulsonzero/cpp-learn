@@ -33,8 +33,8 @@ int main() {
     Phone *ptrPhone = &p;
     ptrPhone -> get_charge();
 
-    Phone *ptr = new Phone();
-    ptr.get_charge();
+    auto *ptr = new Phone();
+    ptr->get_charge();
 
     return 0;
 }

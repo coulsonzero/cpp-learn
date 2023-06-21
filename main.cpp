@@ -1,4 +1,13 @@
-//
-// Created by coulsonzero on 2023/6/5.
-//
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+int main() {
+    string s = "string [4]";
+
+    return 0;
+}
+
+
 

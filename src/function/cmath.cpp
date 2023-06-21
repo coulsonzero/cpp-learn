@@ -14,7 +14,13 @@ int main() {
 
     const double PI = 3.141592653589793238462;
     cout << "sin(45): " << sin(PI / 4) << endl;     // 0.707107
-    cout << sqrt(2)/2 << endl;                      // 0.707107     
+    cout << sqrt(2)/2 << endl;                      // 0.707107
+
+    cout << max(2, 3) << endl;  // 3
 
     return 0;
 }
+
+
+
+

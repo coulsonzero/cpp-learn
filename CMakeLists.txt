@@ -3,10 +3,7 @@ project(cpp_learn)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(example/add)
-include_directories(example/foo)
-include_directories(example/swap)
-include_directories(src/string)
 
-add_executable(${PROJECT_NAME} src/string/string-int.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
+add_executable(src_1-basic_04-datetype-type src/1-basic/04-datetype-type.cpp)
