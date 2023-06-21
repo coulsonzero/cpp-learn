@@ -40,8 +40,8 @@ class vec {
         static __t max(__vec &vec);
     protected:  // ...
     private:    // ...
-    __Tmp__
-    friend string type_name(__t t);
+    // __Tmp__
+    // friend string type_name(__t t);
     };
 }
 
@@ -58,9 +58,7 @@ __Tmp__
 void __p::iter(__vec &vec) {
     cout << "[ ";
     for (auto it = vec.begin(); it != vec.end(); ++it) {
-         cout << *it;
-         cout << typeid(*it).name();
-         cout << (it == vec.end() - 1 ? " " : ", ");
+         cout << *it << (it == vec.end() - 1 ? " " : ", ");
     }
     cout << "]" << endl;
 }
@@ -112,7 +110,7 @@ __Tmp__
 __t __p::max(__vec &vec) {
     return *std::max_element(std::begin(vec), std::end(vec));
 }
-
+/*
 __Tmp__
 string __c::type_name(__t t) {
     string r = typeid(t).name();
@@ -128,5 +126,7 @@ string __c::type_name(__t t) {
         return r;
     }
 }
+ */
+
 
 #endif //CPP_VECTOR_H

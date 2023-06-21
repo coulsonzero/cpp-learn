@@ -37,7 +37,7 @@ int main() {
     cout << std::boolalpha << (it != nums.end()) << endl;     // 0(false) 1(true)
     cout << *it << endl;
 
-
+    /*
     vec::print("type_name");
     cout << co::type_name(nums) << endl;    // vector
     string s1 = "hello";
@@ -46,7 +46,7 @@ int main() {
     string s2 = "as";
     cout << co::type_name(s2) << endl;      // string
     cout << typeid("as").name() << endl;       // A3_c
-
+    */
 
     return 0;
 }

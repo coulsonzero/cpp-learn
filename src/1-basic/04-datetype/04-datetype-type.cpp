@@ -1,9 +1,10 @@
+/*
+#include <cstdlib>
+#include <iostream>
 #include <type_traits>
 #include <typeinfo>
 #include <memory>
 #include <string>
-#include <cstdlib>
-#include <iostream>
 #ifndef _MSC_VER
 #include <cxxabi.h>
 #endif
@@ -24,15 +25,14 @@ string& replace_all(string& src, const string& old_value, const string& new_valu
 }
 
 template <class T>
-string type_name()
-{
+string type_name() {
     typedef typename remove_reference<T>::type TR;
     unique_ptr<char, void (*)(void *)> own(
-#ifndef _MSC_VER
+    #ifndef _MSC_VER
             abi::__cxa_demangle(typeid(TR).name(), nullptr, nullptr, nullptr),
-#else
+    #else
             nullptr,
-#endif
+    #endif
             free);
     string r = own != nullptr ? own.get() : typeid(TR).name();
     if (is_const<TR>::value)
@@ -59,11 +59,30 @@ string type_name()
     }
 
 
+
     return r;
 }
 
-int main()
-{
+template <class T>
+string typeName(T obj) {
+    return type_name<decltype(obj)>();
+}
+
+int main() {
+    int a = 10;
+    cout << typeName(a) << endl;        // int
+
+    string s1 = "hello";
+    cout << typeName(s1) << endl;  // string
+
+    vector<int> v1 = {1,2,3};
+    cout << typeName(v1) << endl;  // vector<int>
+
+
+    return 0;
+}
+
+void example() {
     int a = 1;
     const int &b = a;
     cout << type_name<decltype(b)>() << endl;   // int const&
@@ -112,3 +131,7 @@ int main()
     cout << type_name<decltype(v3)>() << endl;  // std::__1::vector<char, std::__1::allocator<char> >
     cout << type_name<decltype(v4)>() << endl;  // ...
 }
+ */ // type
+
+
+// lib_string.h
