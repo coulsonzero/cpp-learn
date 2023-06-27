@@ -1,3 +1,6 @@
 # make push
 push:
-	@bash push.sh
+	@bash shell/push.sh
+
+py:
+	@python shell/main.py
