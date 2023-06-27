@@ -10,6 +10,7 @@ int global_var;
 int main() {
     // variable
     int num = 20;       // or `int num(20)`
+
     // constant
     const double PI = 3.14;
 

@@ -75,6 +75,8 @@ __Tmp__
 void __p::output(__vec &vec) {
     cout << "size: ";
     cout << std::setw(6) << std::left << vec.size();
+    cout << "cap: ";
+    cout << std::setw(6) << std::left << vec.capacity();
     cout << "value: ";
     cout << std::right;
     co::vec::iter(vec);

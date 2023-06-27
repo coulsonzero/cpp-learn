@@ -21,7 +21,7 @@ int main() {
 
     cout << "------------" << endl;
 
-    for (auto iter : map) {
+    for (auto& iter : map) {
         cout << " [" << iter.first << ", " << iter.second << "]";
     }
     cout << endl;
