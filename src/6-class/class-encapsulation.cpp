@@ -13,7 +13,7 @@ public:
         return name;
     }
 protected:  // ...
-// friend function
+// friend 3-function
 };
 
 int main() {

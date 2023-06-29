@@ -16,7 +16,7 @@ class Fruit : public Product
     public:
         std::string type;
         void setInfo(double price, int weight) {
-            // Base class data call (protect)
+            // Base 6-class data call (protect)
             this->price = price;
             this->weight = weight;
         }
@@ -32,7 +32,7 @@ class Fruit : public Product
 int main() {
     Fruit obj;
     obj.type = "Apple";
-    // Base class method call
+    // Base 6-class method call
     obj.setInfo(4.99, 10);
     obj.getInfo();
 

@@ -19,7 +19,7 @@ int main() {
     vecCopy.print();
 
 
-    // class value init
+    // 6-class value init
 //    co::vector vec3 = {1, 2, 3, 4};
 //    vec3.print();
 //

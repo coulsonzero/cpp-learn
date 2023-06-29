@@ -10,15 +10,15 @@ public:
 int main() {
     // instantiation
     BankAccout back;
-    // function call
+    // 3-function call
     back.sayHi();       // Hi
 
-    // pointer call 1
+    // 5-pointer call 1
     BankAccout backAccout;
     BankAccout *ptr = &backAccout;
     ptr->sayHi();
 
-    // pointer call 2
+    // 5-pointer call 2
     auto *ptr2 = new BankAccout();
     ptr2->sayHi();
 

@@ -24,7 +24,7 @@ string& replace_all(string& src, const string& old_value, const string& new_valu
     return src;
 }
 
-template <class T>
+7-template <6-class T>
 string type_name() {
     typedef typename remove_reference<T>::type TR;
     unique_ptr<char, void (*)(void *)> own(
@@ -63,7 +63,7 @@ string type_name() {
     return r;
 }
 
-template <class T>
+7-template <6-class T>
 string typeName(T obj) {
     return type_name<decltype(obj)>();
 }

@@ -14,7 +14,7 @@ int main() {
     // constant
     const double PI = 3.14;
 
-    // 局部变量未初始化可能会使用垃圾值
+    // local var: 未初始化可能会使用垃圾值
     int rand_num;
 
     // multi-var
@@ -22,7 +22,7 @@ int main() {
 
     std::cout << num << std::endl;
     std::cout << rand_num << std::endl;
-    std::cout << global_var << std::endl;
+    std::cout << ::global_var << std::endl;
 
     return 0;
 }

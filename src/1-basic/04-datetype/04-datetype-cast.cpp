@@ -7,8 +7,7 @@
  * static_cast<int>(12)   : 显式类型转换
  */
 
-int main()
-{
+int main() {
     // 类型
     std::cout << typeid(12).name() << std::endl;        // i: int
     std::cout << typeid(11.2).name() << std::endl;      // d: double
@@ -29,4 +28,5 @@ int main()
     int num = 4;
     std::cout << sizeof(num) << std::endl; // sizeof(int): 4
 }
+
 

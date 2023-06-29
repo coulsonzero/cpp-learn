@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
     string name = "hello";
-    cout << name.size() << endl;        // 5
-    cout << name.length() << endl;      // 5
+    cout << name.size() << endl;        // 5  STL
+    cout << name.length() << endl;      // 5  C
     cout << name.capacity() << endl;    // 22
 
     cout << boolalpha << name.empty() << endl;   // false
@@ -14,6 +14,7 @@ int main()
     cout << name.data() << endl;        // "hello"
 
     cout << name[2] << endl;               // 'l'
+    cout << name.at(2) << endl;         // 'l'
     cout << name.substr(1,4) << endl;      // "ello"
     cout << name.find('l', 0) << endl;     // 2
     cout << name.find('M', 0) << endl;     // 18446744073709551615: not found!
@@ -52,7 +53,6 @@ int main()
 
     // append
     string temp = "hello";
-    temp.append();
     temp.append(" world");
     cout << temp << endl;   // hello world
 

@@ -1,8 +1,8 @@
 #include <iostream>
 
-// pure-virtual function:
-// 1. cannot create object of the base class
-// 2. if delete the base class pointer, cannot print the next derived class function.
+// pure-virtual 3-function:
+// 1. cannot create object of the base 6-class
+// 2. if delete the base 6-class 5-pointer, cannot print the next derived 6-class 3-function.
 
 
 class Animal {
